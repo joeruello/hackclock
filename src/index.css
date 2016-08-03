@@ -1,0 +1,53 @@
+@import 'https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700,400italic';
+
+@font-face {
+  font-family: 'Yrsa';
+  font-style: normal;
+  font-weight: 400;
+  src: url('./assets/fonts/Yrsa-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Yrsa';
+  font-style: normal;
+  font-weight: bold;
+  src: url('./assets/fonts/Yrsa-Bold.ttf');
+}
+
+
+body {
+  margin: 0;
+  margin-top: 100px;
+  padding: 0;
+  font-family: 'Source Sans Pro';
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
+  text-rendering: optimizeLegibility !important;
+  -webkit-font-smoothing: antialiased !important;
+  background: #fafafa;
+}
+
+.center {
+  height: 100vh;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+
+.clock {
+  font-size: 4em;
+}
+
+.logo {
+  background-image: url('./assets/logo.svg');
+  height: 150px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: auto 200px;
+}
+
+.big {
+  font-family: 'Yrsa';
+  font-size: 3em;
+  font-weight: bold;
+}
