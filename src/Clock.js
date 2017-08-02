@@ -37,11 +37,7 @@ export default class Clock extends Component {
         const {now} = this.state;
         let remaining = Math.max(0,timestamp - now);
 
-
-        const days = Math.floor(remaining / SECONDS_PER_DAY);
-        remaining = remaining - days * SECONDS_PER_DAY;
-
-        const hours = Math.floor(remaining / SECONDS_PER_HOUR) % HOURS_PER_DAY
+        const hours = Math.floor(remaining / SECONDS_PER_HOUR)
         remaining = remaining - hours * SECONDS_PER_HOUR;        
 
         const minutes = Math.floor(remaining / SECONDS_PER_MIN) % MINS_PER_HOUR
@@ -50,7 +46,7 @@ export default class Clock extends Component {
         const seconds = Math.floor(remaining % SECONDS_PER_MIN);
 
         return <div className="row text-center clock">
-            {days} - {pad(hours)}:{pad(minutes)}:{pad(seconds)}
+            {pad(hours)}:{pad(minutes)}:{pad(seconds)}
         </div>
     }
 
