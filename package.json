@@ -5,9 +5,11 @@
   "devDependencies": {
     "babel-polyfill": "^6.9.1",
     "babel-register": "^6.11.5",
-    "react-scripts": "0.1.0"
+    "react-scripts": "0.2.0"
   },
+  "homepage": "https://joeruello.github.io/hackclock",
   "dependencies": {
+    "gh-pages": "^1.0.0",
     "moment": "^2.14.1",
     "react": "^15.2.1",
     "react-dom": "^15.2.1"
@@ -15,6 +17,8 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "eject": "react-scripts eject"
   }
 }
