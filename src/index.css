@@ -19,7 +19,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Source Sans Pro';
-  text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.006);
   text-rendering: optimizeLegibility !important;
   -webkit-font-smoothing: antialiased !important;
   background: #fafafa;
